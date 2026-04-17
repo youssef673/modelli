@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modello di McCall e Modello di Boehm</title>
+  <meta name="description" content="Presentazione web sui modelli di qualità del software di McCall e Boehm." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Qualità del Software</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#mccall">McCall</a>
+        <a href="#boehm">Boehm</a>
+        <a href="#confronto">Confronto</a>
+        <a href="#presentazione">Presentazione</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Sito pronto per GitHub Pages</p>
+          <h1>Modello di McCall e Modello di Boehm</h1>
+          <p class="subtitle">
+            Un sito più elegante e più utile per la tua esposizione orale: definizioni, confronto, traccia di presentazione e quiz finale.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn primary" href="#mccall">Inizia la spiegazione</a>
+            <button class="btn secondary" id="themeToggle">Tema chiaro/scuro</button>
+          </div>
+
+          <div class="hero-badges">
+            <span>✔ chiaro da studiare</span>
+            <span>✔ bello da mostrare</span>
+            <span>✔ pronto online</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <h3>Obiettivo del sito</h3>
+          <p>
+            Spiegare in modo semplice due modelli storici della qualità del software e mostrare come hanno preparato il terreno agli standard successivi.
+          </p>
+          <ul>
+            <li>McCall: qualità divisa in fattori</li>
+            <li>Boehm: qualità organizzata in livelli</li>
+            <li>Confronto finale pronto da presentare</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="container narrow">
+        <h2>Perché questi modelli sono importanti?</h2>
+        <p>
+          La qualità del software non può essere valutata solo con impressioni personali. Modelli come McCall e Boehm
+          aiutano a trasformare la qualità in un insieme di aspetti osservabili, confrontabili e spiegabili.
+        </p>
+        <div class="quote-box">
+          <p>
+            “La qualità del software passa da idea astratta a insieme di caratteristiche da analizzare.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mccall">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Modello 1</span>
+          <h2>Modello di McCall</h2>
+        </div>
+        <p class="lead">
+          Proposto nel 1977, il modello di McCall divide la qualità del software in tre grandi aree, in base a come il prodotto viene usato, corretto o adattato.
+        </p>
+
+        <div class="cards three">
+          <article class="card">
+            <div class="card-icon">⚙</div>
+            <h3>Product Operations</h3>
+            <p>Descrive il comportamento del software mentre viene utilizzato.</p>
+            <ul>
+              <li>Correttezza</li>
+              <li>Affidabilità</li>
+              <li>Efficienza</li>
+              <li>Integrità</li>
+              <li>Usabilità</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🛠</div>
+            <h3>Product Revision</h3>
+            <p>Riguarda la facilità con cui il software può essere corretto, testato o migliorato.</p>
+            <ul>
+              <li>Manutenibilità</li>
+              <li>Testabilità</li>
+              <li>Flessibilità</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🌍</div>
+            <h3>Product Transition</h3>
+            <p>Valuta la capacità del software di adattarsi a nuovi ambienti o a nuovi usi.</p>
+            <ul>
+              <li>Portabilità</li>
+              <li>Riusabilità</li>
+              <li>Interoperabilità</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="highlight">
+          <strong>Idea chiave:</strong> McCall vede la qualità come un insieme di fattori che descrivono il software dal punto di vista pratico.
+        </div>
+
+        <div class="mini-explain">
+          <h3>Come lo puoi spiegare a voce</h3>
+          <p>
+            “Il modello di McCall è utile perché organizza la qualità in tre situazioni concrete:
+            quando il software viene usato, quando deve essere corretto e quando deve essere trasferito o riutilizzato.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="boehm">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Modello 2</span>
+          <h2>Modello di Boehm</h2>
+        </div>
+        <p class="lead">
+          Il modello di Boehm, proposto nel 1978, non si limita a elencare fattori: li organizza in una struttura gerarchica, dal generale al tecnico.
+        </p>
+
+        <div class="cards three">
+          <article class="card">
+            <div class="card-icon">🏁</div>
+            <h3>Livello Alto</h3>
+            <p>Valuta l'utilità complessiva del software.</p>
+            <ul>
+              <li>As-is Utility</li>
+              <li>Maintainability</li>
+              <li>Portability</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📚</div>
+            <h3>Livello Intermedio</h3>
+            <p>Comprende caratteristiche di qualità più vicine all'esperienza d'uso e di manutenzione.</p>
+            <ul>
+              <li>Affidabilità</li>
+              <li>Efficienza</li>
+              <li>Usabilità</li>
+              <li>Testabilità</li>
+              <li>Comprensibilità</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🔬</div>
+            <h3>Livello Primitivo</h3>
+            <p>Scende nei dettagli tecnici osservabili o misurabili.</p>
+            <ul>
+              <li>Accuratezza</li>
+              <li>Completezza</li>
+              <li>Consistenza</li>
+              <li>Strutturazione</li>
+              <li>Accessibilità</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="highlight">
+          <strong>Idea chiave:</strong> Boehm mostra che la qualità può essere letta a più livelli, da quelli generali fino a quelli più tecnici.
+        </div>
+
+        <div class="mini-explain">
+          <h3>Come lo puoi spiegare a voce</h3>
+          <p>
+            “Boehm aggiunge profondità al discorso: non descrive solo la qualità, ma mostra anche come questa si scompone in livelli sempre più dettagliati.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="confronto">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Sintesi</span>
+          <h2>Confronto diretto</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Aspetto</th>
+                <th>McCall</th>
+                <th>Boehm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anno</td>
+                <td>1977</td>
+                <td>1978</td>
+              </tr>
+              <tr>
+                <td>Struttura</td>
+                <td>Tre prospettive</td>
+                <td>Tre livelli gerarchici</td>
+              </tr>
+              <tr>
+                <td>Domanda centrale</td>
+                <td>Come si comporta il software?</td>
+                <td>Come si scompone la qualità?</td>
+              </tr>
+              <tr>
+                <td>Punto forte</td>
+                <td>Semplicità e chiarezza</td>
+                <td>Maggiore dettaglio</td>
+              </tr>
+              <tr>
+                <td>Utilità didattica</td>
+                <td>Molto intuitivo</td>
+                <td>Molto strutturato</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="info-box">
+            <h3>Quando conviene citare McCall</h3>
+            <p>Quando vuoi far capire subito che la qualità non è una sola cosa, ma un insieme di aspetti legati all'uso, alla modifica e al trasferimento del software.</p>
+          </div>
+          <div class="info-box">
+            <h3>Quando conviene citare Boehm</h3>
+            <p>Quando vuoi mostrare una visione più analitica, che parte da concetti generali e arriva a elementi tecnici specifici.</p>
+          </div>
+        </div>
+
+        <p class="conclusion">
+          In breve: <strong>McCall è più immediato</strong>, mentre <strong>Boehm è più gerarchico e approfondito</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="presentazione">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Aiuto orale</span>
+          <h2>Mini traccia per la tua presentazione</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="step"><span>1</span><p>Introduci il concetto di qualità del software e spiega perché non può essere valutata in modo soggettivo.</p></div>
+          <div class="step"><span>2</span><p>Presenta il modello di McCall e le sue tre prospettive principali.</p></div>
+          <div class="step"><span>3</span><p>Presenta il modello di Boehm e la sua organizzazione a livelli.</p></div>
+          <div class="step"><span>4</span><p>Fai un confronto semplice: McCall è più intuitivo, Boehm è più strutturato.</p></div>
+          <div class="step"><span>5</span><p>Concludi dicendo che entrambi hanno contribuito all'evoluzione dei modelli moderni di qualità.</p></div>
+        </div>
+
+        <div class="speech-box">
+          <h3>Frase finale pronta</h3>
+          <p id="finalPhrase">
+            Il modello di McCall e il modello di Boehm sono fondamentali nella storia dell’ingegneria del software perché hanno reso la qualità un concetto analizzabile, organizzato e confrontabile.
+          </p>
+          <button class="btn primary small" id="copyBtn">Copia frase finale</button>
+          <span id="copyMsg" class="copy-msg"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="section-tag">Ripasso</span>
+          <h2>Mini quiz finale</h2>
+        </div>
+
+        <div class="quiz-card">
+          <p class="quiz-question">Quale tra queste frasi descrive meglio la differenza tra McCall e Boehm?</p>
+          <div class="quiz-options">
+            <button class="quiz-btn" data-correct="false">McCall è più recente e Boehm è uno standard ISO</button>
+            <button class="quiz-btn" data-correct="true">McCall divide la qualità in prospettive, Boehm la organizza in livelli gerarchici</button>
+            <button class="quiz-btn" data-correct="false">McCall riguarda solo i test, Boehm solo la portabilità</button>
+          </div>
+          <p class="quiz-result" id="quizResult"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Sito statico creato per una presentazione scolastica su qualità del software.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
